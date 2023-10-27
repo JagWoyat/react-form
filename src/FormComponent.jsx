@@ -198,7 +198,7 @@ export default function FormComponent() {
           />
         </div>
         <Button
-          className="text-white border-0 rounded-0 p-0 my-4 fs-3 fw-bold"
+          className="text-white border-0 rounded-0 p-0 fs-3 fw-bold"
           id="submitButton"
           variant="primary"
           type="submit"

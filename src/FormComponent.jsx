@@ -89,6 +89,9 @@ export default function FormComponent() {
     if (identifier === "phone") {
       setPhoneValid(true);
     }
+    if (identifier === "email") {
+      setEmailValid(true);
+    }
     if (identifier === "agreement_call" || identifier === "agreement_sms") {
       setPhoneAgreement(true);
     }

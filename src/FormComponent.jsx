@@ -35,17 +35,16 @@ export default function FormComponent() {
     if (!emailCheck) {
       return;
     }
-    if (phone !== "") {
-      const phoneCheck = isPhoneValid(enteredValues.phone);
-      const phoneAgreementCheck =
-        enteredValues.agreement_call || enteredValues.agreement_sms;
-      setPhoneValid(phoneCheck);
-      if (!phoneCheck) {
-        return;
-      } else if (!phoneAgreementCheck) {
-        setPhoneAgreement(phoneAgreementCheck);
-        return;
-      }
+
+    const phoneCheck = isPhoneValid(enteredValues.phone);
+    const phoneAgreementCheck =
+      enteredValues.agreement_call || enteredValues.agreement_sms;
+    setPhoneValid(phoneCheck);
+    if (!phoneCheck) {
+      return;
+    } else if (!phoneAgreementCheck) {
+      setPhoneAgreement(phoneAgreementCheck);
+      return;
     }
 
     const url =

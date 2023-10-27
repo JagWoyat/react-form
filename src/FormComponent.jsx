@@ -48,8 +48,6 @@ export default function FormComponent() {
       }
     }
 
-    console.log(enteredValues);
-
     const url =
       "https://test8.it4u.company/sapi/modules/contact/form/40042ce28394dc369948c018b22c534d";
 
@@ -79,7 +77,6 @@ export default function FormComponent() {
           setResponseContent(null);
           setResponseError(data.error.error_test);
         }
-        console.log("POST request successful", data);
       })
       .catch((error) => {
         console.error("Error:", error);

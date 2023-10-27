@@ -52,7 +52,6 @@ export default function FormComponent() {
 
     const formData = new FormData();
 
-    // Append the values from the state to the FormData object
     formData.append("name", enteredValues.name);
     formData.append("phone", enteredValues.phone);
     formData.append("email", enteredValues.email);

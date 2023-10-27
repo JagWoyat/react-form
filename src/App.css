@@ -20,8 +20,11 @@
 
 #formWrapper {
   box-sizing: content-box;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  -webkit-box-shadow: 3px 3px 20px -10px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 3px 3px 20px -10px rgba(66, 68, 90, 1);
+  box-shadow: 3px 3px 20px -10px rgba(66, 68, 90, 1);
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
 }
 
 .Form {
@@ -87,6 +90,7 @@ input:focus {
 
   #formWrapper {
     box-sizing: border-box;
+    /* box-shadow: none; */
     padding-left: 1rem;
     padding-right: 1rem;
   }

@@ -1,0 +1,93 @@
+.RootView {
+  position: relative;
+  z-index: 100;
+}
+
+#title,
+#titleBold {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.RootWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+#formWrapper {
+  box-sizing: content-box;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.Form {
+  background-color: lightgray;
+  color: black;
+  padding: 2rem;
+}
+
+#name,
+#email,
+#phone {
+  font-family: "Jost", sans-serif;
+}
+
+.Roboto {
+  font-family: "Roboto Slab", serif;
+}
+
+#submitButton {
+  background-color: #a6b33d;
+  width: 200px;
+  height: 50px;
+  font-family: "Jost", sans-serif;
+}
+
+.GreenText {
+  color: rgb(7, 80, 7);
+}
+
+.SmallText {
+  font-size: 0.8rem;
+}
+
+input {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+input::placeholder {
+  color: rgb(7, 80, 7);
+  text-align: center;
+}
+
+input:focus {
+  text-align: left;
+  border: none;
+}
+
+@media (max-width: 575px) {
+  body {
+    height: 100vh;
+    background: linear-gradient(45deg, #e0e3f8, #ffffff, #e0e3f8);
+  }
+
+  .RootWrapper {
+    padding-top: 5rem;
+  }
+
+  #form img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  #formWrapper {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
